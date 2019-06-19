@@ -3,7 +3,7 @@
 <node TEXT="Forecasting" FOLDED="false" ID="ID_1952128801" CREATED="1560552662380" MODIFIED="1560553287201" STYLE="oval">
 <font SIZE="18"/>
 <hook NAME="MapStyle" zoom="2.254">
-    <properties edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" fit_to_viewport="false"/>
+    <properties edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" fit_to_viewport="false" show_icon_for_attributes="true" show_note_icons="true"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24.0 pt">
@@ -63,7 +63,7 @@
 </stylenode>
 </map_styles>
 </hook>
-<node TEXT="Chapter 2" POSITION="right" ID="ID_1981732421" CREATED="1560553338424" MODIFIED="1560553348129">
+<node TEXT="Chapter 2" FOLDED="true" POSITION="right" ID="ID_1981732421" CREATED="1560553338424" MODIFIED="1560553348129">
 <node TEXT="Intro" FOLDED="true" ID="ID_541677685" CREATED="1560553351534" MODIFIED="1560553354530">
 <node TEXT="First thing to do in any data analysis task is to plot the data" ID="ID_67585040" CREATED="1560552664303" MODIFIED="1560553336940"/>
 <node TEXT="Graphs let us visualize the properties of the data, including patterns, unusual observation, changes over time and relationships between variables." ID="ID_743156791" CREATED="1560553381030" MODIFIED="1560553439306"/>
@@ -258,6 +258,280 @@
 <node TEXT="If one or more large spikes lie outside these bounds, or if substantially more than 5% of the spikes are outside the bounds, then the series is probably not white noise." ID="ID_60314103" CREATED="1560605023172" MODIFIED="1560605087713"/>
 </node>
 <node TEXT="2.10 Exercises" ID="ID_924864121" CREATED="1560605655445" MODIFIED="1560605663112"/>
+</node>
+<node TEXT="Chapter 3" POSITION="right" ID="ID_858884354" CREATED="1560901738508" MODIFIED="1560901742274">
+<node TEXT="3.1 Some simple forecasting methods" FOLDED="true" ID="ID_1081030922" CREATED="1560901788036" MODIFIED="1560901799799">
+<node TEXT="These methods are used as simple forecasting benchmarks" ID="ID_775176670" CREATED="1560901799803" MODIFIED="1560901816256"/>
+<node TEXT="Average method" ID="ID_1506576623" CREATED="1560901816524" MODIFIED="1560901913647">
+<node TEXT="The forecast of all future values is equal to the mean of the historical data." ID="ID_1523755619" CREATED="1560901928060" MODIFIED="1560901953897"/>
+<node TEXT="meanf(y, h)" ID="ID_894666258" CREATED="1560902024580" MODIFIED="1560902025640"/>
+</node>
+<node TEXT="Naive method" ID="ID_464833356" CREATED="1560901958844" MODIFIED="1560901969416">
+<node TEXT="The forecast of all future values is equal to the last value." ID="ID_1809978095" CREATED="1560901970356" MODIFIED="1560902099757"/>
+<node TEXT="naive(y,h)" ID="ID_710470945" CREATED="1560902027812" MODIFIED="1560902037472"/>
+</node>
+<node TEXT="Seasonal naive method" ID="ID_263599761" CREATED="1560902059620" MODIFIED="1560902066535">
+<node TEXT="The forecast of future values is equal to the last same seasonal value." ID="ID_1491038500" CREATED="1560902067276" MODIFIED="1560902091072"/>
+</node>
+<node TEXT="Drift method" ID="ID_1865744994" CREATED="1560902118604" MODIFIED="1560902123693">
+<node ID="ID_1939719485" CREATED="1560902134527" MODIFIED="1560902134527"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    This is equivalent to drawing a line between the first and last observations, and extrapolating it into the future.
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node TEXT="That is, any forecasting methods we develop will be compared to these simple methods to ensure that the new method is better than these simple alternatives." ID="ID_23532589" CREATED="1560902252777" MODIFIED="1560902319659">
+<node ID="ID_181154581" CREATED="1560902297614" MODIFIED="1560902297614"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    That is, any forecasting methods we develop will be compared to these simple methods to ensure that the new method is better than these simple alternatives. If not, the new method is not worth considering.
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node TEXT="If not, the new method is not worth considering." ID="ID_81410437" CREATED="1560902339908" MODIFIED="1560902351449"/>
+</node>
+<node TEXT="3.2 Transformations and adjustments" ID="ID_134323609" CREATED="1560902373516" MODIFIED="1560902424168">
+<node TEXT="Intro" FOLDED="true" ID="ID_1974042538" CREATED="1560902434580" MODIFIED="1560902437448">
+<node TEXT="Adjusting the historical data can lead to a simpler forecasting task" ID="ID_166286613" CREATED="1560902438124" MODIFIED="1560902457455"/>
+<node TEXT="The purpose of adjustments is to remove the known sources of variation, or to make the patterns more consistent across the data set." ID="ID_249805756" CREATED="1560902470492" MODIFIED="1560902541107"/>
+<node TEXT="Simpler patterns lead to better forecasts." ID="ID_976712286" CREATED="1560902541556" MODIFIED="1560902555103"/>
+</node>
+<node TEXT="Calendar adjustments" FOLDED="true" ID="ID_220999969" CREATED="1560902561299" MODIFIED="1560902577272">
+<node TEXT="The variation in seasonal data may sometimes be due to calendar effects." ID="ID_913103055" CREATED="1560902601380" MODIFIED="1560902619215"/>
+<node TEXT="Such as Jan has 31 days, Feb has 28/29 days, etc." ID="ID_16506478" CREATED="1560902620172" MODIFIED="1560902642775"/>
+<node TEXT="This may affect values such as milk production, number of flights, etc." ID="ID_1644494296" CREATED="1560902643060" MODIFIED="1560902672887"/>
+<node TEXT="Because having more days in a month will increase the amount of milk produced, the number of flights which take off, etc." ID="ID_85334731" CREATED="1560902676268" MODIFIED="1560902715128"/>
+<node TEXT="So, we can divide the value in each month by the number of days in the month, ie, value/day." ID="ID_1735669702" CREATED="1560902718012" MODIFIED="1560902777447"/>
+<node TEXT="This gives us the value per day, for each day in the month." ID="ID_1069951291" CREATED="1560902778468" MODIFIED="1560902811159"/>
+</node>
+<node TEXT="Population adjustments" FOLDED="true" ID="ID_743843734" CREATED="1560903810388" MODIFIED="1560903818560">
+<node TEXT="These are useful to findout whether a value actually changed, or whether it only changed because of increase or decrease in population." ID="ID_131402287" CREATED="1560903824092" MODIFIED="1560903864721"/>
+<node TEXT="In other words, the data can be adjusted to give per capita data." ID="ID_348672406" CREATED="1560903934580" MODIFIED="1560903981135"/>
+<node ID="ID_1231326674" CREATED="1560904045885" MODIFIED="1560904045885"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    For example, if you are studying the number of hospital beds in a particular region over time, the results are much easier to interpret if you remove the effects of population changes by considering the number of beds per thousand people.
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_959579575" CREATED="1560904056245" MODIFIED="1560904056245"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    Then you can see whether there have been real increases in the number of beds, or whether the increases are due entirely to population increases.
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_719568041" CREATED="1560904077883" MODIFIED="1560904077883"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    It is possible for the total number of beds to increase, but the number of beds per thousand people to decrease.
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1987426679" CREATED="1560904088757" MODIFIED="1560904088757"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    This occurs when the population is increasing faster than the number of hospital beds. For most data that are affected by population changes, it is best to use per-capita data rather than the totals.
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node TEXT="Inflation adjustments" FOLDED="true" ID="ID_235671325" CREATED="1560904097236" MODIFIED="1560904103551">
+<node ID="ID_527332127" CREATED="1560904131744" MODIFIED="1560904131744"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    Data which are affected by the value of money are best adjusted before modelling.
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_937662014" CREATED="1560904148103" MODIFIED="1560904148103"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    For example, the average cost of a new house will have increased over the last few decades due to inflation. A $200,000 house this year is not the same as a $200,000 house twenty years ago.
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_543755895" CREATED="1560904167005" MODIFIED="1560904167005"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    To make these adjustments, a price index is used. If <span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0; padding-right: 0"><font size="131%">z</font></span><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0"><font size="70.7%">t</font></span> denotes the price index and <span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0; padding-right: 0"><font size="131%">y</font></span><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0"><font size="70.7%">t</font></span> denotes the original house price in year <span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0"><font size="131%">t</font></span>, then <span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0"><font size="131%">x</font></span><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0"><font size="70.7%">t</font></span><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0"><font size="131%">=</font></span><font size="131%"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0; padding-right: 0">y</span></font><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0"><font size="70.7%">t</font></span><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0"><font size="131%">/</font></span><font size="131%"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0; padding-right: 0">z</span></font><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0"><font size="70.7%">t</font></span><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0"><font size="131%">&#8727;</font></span><font size="131%"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0; padding-right: 0">z</span></font><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0"><font size="70.7%">2000</font></span> gives the adjusted house price at year 2000 dollar values.
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1249248571" CREATED="1560904174009" MODIFIED="1560904174009"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    Price indexes are often constructed by government agencies. For consumer goods, a common price index is the Consumer Price Index (or CPI).
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node TEXT="Mathematical transformations" FOLDED="true" ID="ID_1649989930" CREATED="1560904196580" MODIFIED="1560904280636">
+<font BOLD="false"/>
+<node TEXT="Logarithms are useful because they are interpretable." ID="ID_1952472080" CREATED="1560904222764" MODIFIED="1560904235190"/>
+<node TEXT="Another useful feature of log transformations is that they constrain the forecasts to stay positive on the original scale" ID="ID_1408731992" CREATED="1560905518380" MODIFIED="1560905546621" BACKGROUND_COLOR="#ffcc33"/>
+<node ID="ID_1095833652" CREATED="1560904261113" MODIFIED="1560904261113"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    Sometimes other transformations are also used (although they are not so interpretable). For example, square roots and cube roots can be used. These are called <strong http-equiv="content-type" content="text/html; charset=utf-8">power transformations</strong> because they can be written in the form <span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0"><font size="131%">w</font></span><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0"><font size="70.7%">t</font></span><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0"><font size="131%">=</font></span><font size="131%"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0; padding-right: 0">y</span></font><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0"><font size="70.7%">p</font></span><font size="70.7%"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0">t</span></font>.
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1100423960" CREATED="1560904279106" MODIFIED="1560904467122"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    A useful family of transformations, that includes both logarithms and power transformations, is the family of <strong http-equiv="content-type" content="text/html; charset=utf-8">Box-Cox transformations</strong>, which depend on the parameter <span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0"><font size="131%">&#955;</font></span>&#160;and are defined as follows:
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="Box-Cox transformation" ID="ID_696239076" CREATED="1560904366943" MODIFIED="1560904390290">
+<hook URI="Forecasting_files/png_4160764913294982252.png" SIZE="0.53953093" NAME="ExternalObject"/>
+</node>
+<node TEXT="A good value of &#x3bb; is one which makes the size of the seasonal variation the same across the whole series." ID="ID_388311801" CREATED="1560904439980" MODIFIED="1560905574506" COLOR="#000000" BACKGROUND_COLOR="#ffcc33"/>
+<node TEXT="This is because this makes the forecasting model simpler." ID="ID_1262581023" CREATED="1560904515084" MODIFIED="1560905574501" BACKGROUND_COLOR="#ffcc33"/>
+<node TEXT="The BoxCox.lambda() function will choose a value of lambda for you." ID="ID_1760893112" CREATED="1560904924452" MODIFIED="1560904942960"/>
+<node ID="ID_1365576885" CREATED="1560905111765" MODIFIED="1560905111765"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    Having chosen a transformation, we need to forecast the transformed data. Then, we need to reverse the transformation (or <em http-equiv="content-type" content="text/html; charset=utf-8">back-transform</em>) to obtain forecasts on the original scale.
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="The reverse Box-Cox transformation is given by" ID="ID_1876693375" CREATED="1560905131616" MODIFIED="1560905142381">
+<hook URI="Forecasting_files/png_13765995277131046128.png" SIZE="0.48798153" NAME="ExternalObject"/>
+</node>
+</node>
+<node TEXT="Bias adjustments" FOLDED="true" ID="ID_188711375" CREATED="1560905751236" MODIFIED="1560905758471">
+<node TEXT="The issue with using mathematical transformations such as Box-Cox transformations is that the back-transformed point forecast will not be the mean of the forecast distribution." ID="ID_1215852582" CREATED="1560905624764" MODIFIED="1560905724249"/>
+<node TEXT="It will usually be the median (assuming that the the data on the transformeds pace is symmetric)." ID="ID_306016606" CREATED="1560905724828" MODIFIED="1560905796143"/>
+<node TEXT="For most purposes, this is acceptable, but occassionally the mean forecast is required." ID="ID_490336580" CREATED="1560905829892" MODIFIED="1560905864871"/>
+<node TEXT="For example we want to add the sales of all the stores in a warehouse region, the means add up, the medians do not." ID="ID_1524054534" CREATED="1560905866404" MODIFIED="1560905955655" BACKGROUND_COLOR="#ffcc33"/>
+<node ID="ID_1942741874" CREATED="1560906004324" MODIFIED="1560906114689"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Bias<b>&#160;</b>is the difference between the simple backtransformed forecast and the mean obtained by adjustment.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1099202459" CREATED="1560906073276" MODIFIED="1560906106960"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      When we use the mean, rather than the median, we say the point forecasts have been bias-adjusted<b>.</b>
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_792201641" CREATED="1560906165924" MODIFIED="1560906165924"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    Bias adjustment is not done by default in the <strong http-equiv="content-type" content="text/html; charset=utf-8">forecast</strong> package. If you want your forecasts to be means rather than medians, use the argument <code>biasadj=TRUE</code> when you select your Box-Cox transformation parameter.
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+</node>
 </node>
 </node>
 </map>
