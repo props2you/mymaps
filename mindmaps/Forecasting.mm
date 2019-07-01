@@ -2,8 +2,8 @@
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
 <node TEXT="Forecasting" FOLDED="false" ID="ID_1952128801" CREATED="1560552662380" MODIFIED="1560553287201" STYLE="oval">
 <font SIZE="18"/>
-<hook NAME="MapStyle" zoom="2.254">
-    <properties edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" fit_to_viewport="false" show_icon_for_attributes="true" show_note_icons="true"/>
+<hook NAME="MapStyle" zoom="1.863">
+    <properties edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_icon_for_attributes="true" show_note_icons="true" fit_to_viewport="false"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24.0 pt">
@@ -259,7 +259,7 @@
 </node>
 <node TEXT="2.10 Exercises" ID="ID_924864121" CREATED="1560605655445" MODIFIED="1560605663112"/>
 </node>
-<node TEXT="Chapter 3" POSITION="right" ID="ID_858884354" CREATED="1560901738508" MODIFIED="1560901742274">
+<node TEXT="Chapter 3" FOLDED="true" POSITION="right" ID="ID_858884354" CREATED="1560901738508" MODIFIED="1560901742274">
 <node TEXT="3.1 Some simple forecasting methods" FOLDED="true" ID="ID_1081030922" CREATED="1560901788036" MODIFIED="1560901799799">
 <node TEXT="These methods are used as simple forecasting benchmarks" ID="ID_775176670" CREATED="1560901799803" MODIFIED="1560901816256"/>
 <node TEXT="Average method" ID="ID_1506576623" CREATED="1560901816524" MODIFIED="1560901913647">
@@ -284,7 +284,6 @@
     This is equivalent to drawing a line between the first and last observations, and extrapolating it into the future.
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -299,7 +298,6 @@
     That is, any forecasting methods we develop will be compared to these simple methods to ensure that the new method is better than these simple alternatives. If not, the new method is not worth considering.
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -332,7 +330,6 @@
     For example, if you are studying the number of hospital beds in a particular region over time, the results are much easier to interpret if you remove the effects of population changes by considering the number of beds per thousand people.
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_959579575" CREATED="1560904056245" MODIFIED="1560904056245"><richcontent TYPE="NODE">
@@ -345,7 +342,6 @@
     Then you can see whether there have been real increases in the number of beds, or whether the increases are due entirely to population increases.
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_719568041" CREATED="1560904077883" MODIFIED="1560904077883"><richcontent TYPE="NODE">
@@ -358,7 +354,6 @@
     It is possible for the total number of beds to increase, but the number of beds per thousand people to decrease.
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_1987426679" CREATED="1560904088757" MODIFIED="1560904088757"><richcontent TYPE="NODE">
@@ -371,7 +366,6 @@
     This occurs when the population is increasing faster than the number of hospital beds. For most data that are affected by population changes, it is best to use per-capita data rather than the totals.
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -386,7 +380,6 @@
     Data which are affected by the value of money are best adjusted before modelling.
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_937662014" CREATED="1560904148103" MODIFIED="1560904148103"><richcontent TYPE="NODE">
@@ -399,7 +392,6 @@
     For example, the average cost of a new house will have increased over the last few decades due to inflation. A $200,000 house this year is not the same as a $200,000 house twenty years ago.
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_543755895" CREATED="1560904167005" MODIFIED="1560904167005"><richcontent TYPE="NODE">
@@ -412,7 +404,6 @@
     To make these adjustments, a price index is used. If <span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0; padding-right: 0"><font size="131%">z</font></span><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0"><font size="70.7%">t</font></span> denotes the price index and <span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0; padding-right: 0"><font size="131%">y</font></span><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0"><font size="70.7%">t</font></span> denotes the original house price in year <span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0"><font size="131%">t</font></span>, then <span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0"><font size="131%">x</font></span><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0"><font size="70.7%">t</font></span><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0"><font size="131%">=</font></span><font size="131%"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0; padding-right: 0">y</span></font><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0"><font size="70.7%">t</font></span><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0"><font size="131%">/</font></span><font size="131%"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0; padding-right: 0">z</span></font><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0"><font size="70.7%">t</font></span><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0"><font size="131%">&#8727;</font></span><font size="131%"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0; padding-right: 0">z</span></font><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0"><font size="70.7%">2000</font></span> gives the adjusted house price at year 2000 dollar values.
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_1249248571" CREATED="1560904174009" MODIFIED="1560904174009"><richcontent TYPE="NODE">
@@ -425,7 +416,6 @@
     Price indexes are often constructed by government agencies. For consumer goods, a common price index is the Consumer Price Index (or CPI).
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -443,7 +433,6 @@
     Sometimes other transformations are also used (although they are not so interpretable). For example, square roots and cube roots can be used. These are called <strong http-equiv="content-type" content="text/html; charset=utf-8">power transformations</strong> because they can be written in the form <span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0"><font size="131%">w</font></span><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0"><font size="70.7%">t</font></span><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0"><font size="131%">=</font></span><font size="131%"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0; padding-right: 0">y</span></font><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0"><font size="70.7%">p</font></span><font size="70.7%"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0">t</span></font>.
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_1100423960" CREATED="1560904279106" MODIFIED="1560904467122"><richcontent TYPE="NODE">
@@ -456,7 +445,6 @@
     A useful family of transformations, that includes both logarithms and power transformations, is the family of <strong http-equiv="content-type" content="text/html; charset=utf-8">Box-Cox transformations</strong>, which depend on the parameter <span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0"><font size="131%">&#955;</font></span>&#160;and are defined as follows:
   </body>
 </html>
-
 </richcontent>
 </node>
 <node TEXT="Box-Cox transformation" ID="ID_696239076" CREATED="1560904366943" MODIFIED="1560904390290">
@@ -475,7 +463,6 @@
     Having chosen a transformation, we need to forecast the transformed data. Then, we need to reverse the transformation (or <em http-equiv="content-type" content="text/html; charset=utf-8">back-transform</em>) to obtain forecasts on the original scale.
   </body>
 </html>
-
 </richcontent>
 </node>
 <node TEXT="The reverse Box-Cox transformation is given by" ID="ID_1876693375" CREATED="1560905131616" MODIFIED="1560905142381">
@@ -499,7 +486,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_1099202459" CREATED="1560906073276" MODIFIED="1560906106960"><richcontent TYPE="NODE">
@@ -514,7 +500,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_792201641" CREATED="1560906165924" MODIFIED="1560906165924"><richcontent TYPE="NODE">
@@ -527,8 +512,238 @@
     Bias adjustment is not done by default in the <strong http-equiv="content-type" content="text/html; charset=utf-8">forecast</strong> package. If you want your forecasts to be means rather than medians, use the argument <code>biasadj=TRUE</code> when you select your Box-Cox transformation parameter.
   </body>
 </html>
+</richcontent>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="Chapter 6" FOLDED="true" POSITION="right" ID="ID_317670122" CREATED="1561399313490" MODIFIED="1561399317969">
+<node TEXT="6.6 STL decomposition" ID="ID_795176138" CREATED="1561399321953" MODIFIED="1561399407445">
+<node TEXT="Seasonal and trend decomposition using Loess" ID="ID_392379270" CREATED="1561399329128" MODIFIED="1561399389574"/>
+<node TEXT="It&apos;s a robust and versatile method for decomposing time series." ID="ID_540463747" CREATED="1561399415328" MODIFIED="1561399440056"/>
+<node TEXT="Advantages" FOLDED="true" ID="ID_261453585" CREATED="1561399454000" MODIFIED="1561399459485">
+<node TEXT="Unlike X11 and SEATS, it will handle any type of seasonality, not only quarterly and monthly" ID="ID_1933133325" CREATED="1561399460216" MODIFIED="1561399509341"/>
+<node TEXT="The seasonal component can change over time, the rate of change can be controlled by the user" ID="ID_1923391264" CREATED="1561399523984" MODIFIED="1561399546197"/>
+<node TEXT="The smoothness of the trend-cycle (the order of the MA) can be controlled by the user." ID="ID_597091232" CREATED="1561399547144" MODIFIED="1561399580812"/>
+<node TEXT="It can be made robust to outliers, so that occasional unusual values do not affect the estimates of the trend-cycle or seasonal component. But the remainder component will be affected however." ID="ID_1517526716" CREATED="1561399581120" MODIFIED="1561399746464"/>
+</node>
+<node TEXT="Disadvantages" ID="ID_439711634" CREATED="1561399754592" MODIFIED="1561399762524">
+<node TEXT="It does not handle trading day or calendar variation automatically." ID="ID_1743480721" CREATED="1561399763688" MODIFIED="1561399794012"/>
+<node TEXT="It only works for additive decomposition." ID="ID_574689027" CREATED="1561399794512" MODIFIED="1561399805588"/>
+<node TEXT="It is possible to obtain a multiplicative decomposition by first taking logs of the data, then back-transforming the components.&#xa;&#xa;Decompositions between additive and multiplicative can be obtained using a Box-Cox transformation of the data with 0&lt;&#x3bb;&lt;1. A value of &#x3bb;=0 corresponds to the multiplicative decomposition while &#x3bb;=1 is equivalent to an additive decomposition." ID="ID_943110928" CREATED="1561400149176" MODIFIED="1561400248888"/>
+</node>
+</node>
+<node TEXT="6.7 Measuring strength of trend and seasonality" ID="ID_1983070015" CREATED="1561409404028" MODIFIED="1561409465552">
+<font BOLD="false"/>
+<node TEXT="png_15804114970547097411.png" ID="ID_51462094" CREATED="1561409491563" MODIFIED="1561409491563">
+<hook URI="Forecasting_files/png_15804114970547097411.png" SIZE="1.0" NAME="ExternalObject"/>
+</node>
+<node TEXT="png_6064324218892365721.png" ID="ID_556376945" CREATED="1561409505813" MODIFIED="1561409505813">
+<hook URI="Forecasting_files/png_6064324218892365721.png" SIZE="1.0" NAME="ExternalObject"/>
+</node>
+<node ID="ID_547520078" CREATED="1561409517778" MODIFIED="1561409517778"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    These measures can be useful, for example, when there you have a large collection of time series, and you need to find the series with the most trend or the most seasonality.
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+</node>
+<node TEXT="Chapter 7 Exponential Smoothing" POSITION="right" ID="ID_954080424" CREATED="1561409831801" MODIFIED="1561409869204">
+<node TEXT="Intro" FOLDED="true" ID="ID_1986229392" CREATED="1561409841993" MODIFIED="1561409847724">
+<node TEXT="Exp Smoothing methods are weighted averages of past observations." ID="ID_1058098296" CREATED="1561409884441" MODIFIED="1561409904309"/>
+<node TEXT="The weights decay the more the observations are further along in the past." ID="ID_1885207803" CREATED="1561409904865" MODIFIED="1561409922332"/>
+<node TEXT="This method generates reliable forecasts quickly and for a wide range of time series." ID="ID_3922140" CREATED="1561410192105" MODIFIED="1561410232845">
+<node TEXT="This is of great importance to applications in industry." ID="ID_1803812123" CREATED="1561410244281" MODIFIED="1561410273437"/>
+</node>
+<node TEXT="Part 1" ID="ID_816432807" CREATED="1561410320513" MODIFIED="1561410324388">
+<node TEXT="Mechanics of Exp smoothing methods" ID="ID_1613117495" CREATED="1561410324913" MODIFIED="1561410338956"/>
+<node TEXT="Applications of these methods" ID="ID_1466421460" CREATED="1561410343257" MODIFIED="1561410352861"/>
+</node>
+<node TEXT="Part 2" ID="ID_1998776768" CREATED="1561410354993" MODIFIED="1561410359173">
+<node TEXT="Statistical models which underlie the exp smoothing methods" ID="ID_1663097450" CREATED="1561410359753" MODIFIED="1561410375020"/>
+<node TEXT="Will help in genuine model selection between the models we build." ID="ID_756250498" CREATED="1561410389457" MODIFIED="1561410438948"/>
+</node>
+</node>
+<node TEXT="7.1 Simple exponential smoothing" FOLDED="true" ID="ID_1556371975" CREATED="1561410711201" MODIFIED="1561410725885">
+<node TEXT="Can be used to forecast data with no clear trend or seasonality." ID="ID_1042870193" CREATED="1561410845289" MODIFIED="1561410864445"/>
+<node TEXT="Naive method is like SES where only the most recent observation is given weight" ID="ID_892883730" CREATED="1561411410154" MODIFIED="1561411441726"/>
+<node TEXT="Average method is like SES where all the observations are given equal weight" ID="ID_1633963400" CREATED="1561411442025" MODIFIED="1561411465452"/>
+<node TEXT="We usually want to be somewhere in between these two extremes." ID="ID_1605709655" CREATED="1561411466161" MODIFIED="1561411486749"/>
+<node TEXT="In SES forecasts are calculated using weighted averages, where the weights decrease exponentially for observations further in the past." ID="ID_627193741" CREATED="1561506522961" MODIFIED="1561506585857"/>
+<node TEXT="The largest weights are for the recent observations, the smallest weights are for the oldest observations." ID="ID_211704404" CREATED="1561506601951" MODIFIED="1561506632157"/>
+<node TEXT="here &#x3b1; is the smoothing parameter." ID="ID_604795011" CREATED="1561506682669" MODIFIED="1561506722398">
+<hook URI="Forecasting_files/png_4628786113387667200.png" SIZE="0.49909" NAME="ExternalObject"/>
+</node>
+<node ID="ID_649950678" CREATED="1561506945811" MODIFIED="1561506945811"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    Note that the sum of the weights even for a small value of <span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0"><font size="131%">&#945;</font></span> will be approximately one for any reasonable sample size.
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="Component form" ID="ID_1669259125" CREATED="1561508624595" MODIFIED="1561508636308">
+<hook URI="Forecasting_files/png_3327737384099254784.png" SIZE="0.6492931" NAME="ExternalObject"/>
+</node>
+<node TEXT="Flat forecasts" FOLDED="true" ID="ID_1300203819" CREATED="1561508564864" MODIFIED="1561508574433">
+<node TEXT="All forecasts take the same value, equal to the value of the last component." ID="ID_1406002823" CREATED="1561508574439" MODIFIED="1561508598556"/>
+<node TEXT="png_10315207689418822307.png" ID="ID_92395294" CREATED="1561508681011" MODIFIED="1561508681011">
+<hook URI="Forecasting_files/png_10315207689418822307.png" SIZE="0.8292273" NAME="ExternalObject"/>
+</node>
+</node>
+<node TEXT="Optimization" FOLDED="true" ID="ID_188807147" CREATED="1561510570311" MODIFIED="1561510574611">
+<node TEXT="We need to find values of alpha and l0 which give us the least error." ID="ID_1528523245" CREATED="1561510575296" MODIFIED="1561510607294"/>
+<node TEXT="For this we minimize the equation given below, with the restriction that 0 &lt; &#x3b1; &lt; 1" ID="ID_62456294" CREATED="1561510646026" MODIFIED="1561510690693">
+<hook URI="Forecasting_files/png_12083121582266960099.png" SIZE="0.77922076" NAME="ExternalObject"/>
+</node>
+<node TEXT="The larger the alpha value the more the fitted value will resemble the previous observation." ID="ID_123737753" CREATED="1561512036336" MODIFIED="1561512098102"/>
+<node TEXT="In other words, The large value of &#x3b1; in this example is reflected in the large adjustment that takes place in the estimated level &#x2113;t at each time. A smaller value of &#x3b1; would lead to smaller changes over time, and so the series of fitted values would be smoother." ID="ID_756338920" CREATED="1561512079608" MODIFIED="1561512124301"/>
+</node>
+</node>
+<node TEXT="7.2 Trend methods" FOLDED="true" ID="ID_1820114087" CREATED="1561595388729" MODIFIED="1561595415352">
+<node TEXT="Holt&apos;s linear trend method" ID="ID_1280820797" CREATED="1561595960727" MODIFIED="1561595969661">
+<node TEXT="0&#x2264;&#x3b1;&#x2264;1,  0&#x2264;&#x3b2;&#x2217;&#x2264;1" ID="ID_1537023423" CREATED="1561595977589" MODIFIED="1561596015629">
+<hook URI="Forecasting_files/png_16679135362375850500.png" SIZE="0.77922076" NAME="ExternalObject"/>
+</node>
+<node TEXT="Very small values of &#x3b2;&#x2217; mean that the slope hardly changes over time." ID="ID_807281539" CREATED="1561678407219" MODIFIED="1561678445729"/>
+</node>
+<node TEXT="Damped trend methods" ID="ID_1692807077" CREATED="1561598065983" MODIFIED="1561598071652">
+<node TEXT="Holt&apos;s linear method indefinitely extends the trend into the future." ID="ID_755701783" CREATED="1561598072726" MODIFIED="1561598100668"/>
+<node TEXT="Empirically this leads to over-forecasting, especially for the longer horizons." ID="ID_666139980" CREATED="1561598107607" MODIFIED="1561598161848"/>
+<node TEXT="Motivated by this , Gardner and McKenzie introduced a parameter that dampens the trend to a flat line some time in the future." ID="ID_59401107" CREATED="1561598596407" MODIFIED="1561598664340"/>
+<node ID="ID_1914131407" CREATED="1561598680919" MODIFIED="1561598856034">
+<icon BUILTIN="yes"/>
+<richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Methods with dampened trend have proven very successful, and are arguable the most popular <i>individual methods</i>&#160;when forecasts are required automatically for many series.
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node ID="ID_312830328" CREATED="1561599029533" MODIFIED="1561599029533"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    If <span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0"><font size="127%">&#981;</font></span><font size="127%"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0">=</span><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0">1</span></font>, the method is identical to Holt&#8217;s linear method. For values between <span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0"><font size="127%">0</font></span> and <span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0"><font size="127%">1</font></span>, <span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0"><font size="127%">&#981;</font></span> dampens the trend so that it approaches a constant some time in the future
+  </body>
+</html>
+</richcontent>
+</node>
+<node ID="ID_1217126844" CREATED="1561599037736" MODIFIED="1561599037736"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    In fact, the forecasts converge to <span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0"><font size="127%">&#8467;</font></span><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0; padding-right: 0"><font size="70.7%">T</font></span><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0"><font size="127%">+</font></span><font size="127%"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0">&#981;</span><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0">b</span></font><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0; padding-right: 0"><font size="70.7%">T</font></span><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0"><font size="127%">/</font></span><font size="127%"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0">(</span><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0">1</span><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0">&#8722;</span><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0">&#981;</span><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0">)</span></font> as <span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0"><font size="127%">h</font></span><font size="127%"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0">&#8594;</span><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0">&#8734;</span></font> for any value <span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0"><font size="127%">0</font></span><font size="127%"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0">&lt;</span><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0">&#981;</span><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0">&lt;</span><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0">1</span></font>. This means that short-run forecasts are trended while long-run forecasts are constant.
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="Practically speaking, &#x3d5; is rarely less than 0.8, since small values of &#x3d5; will dampen the trend very very fast." ID="ID_897031287" CREATED="1561599174878" MODIFIED="1561599240188"/>
+<node TEXT="At the same time, if &#x3d5; is close to 1, it means the a damped model is indistinguishable from a non-damped model." ID="ID_348722796" CREATED="1561599243911" MODIFIED="1561599302675"/>
+<node TEXT="So we restrict &#x3d5; to a minimum of 0.8, and a maximum of 0.98" ID="ID_522629746" CREATED="1561599307391" MODIFIED="1561599337199"/>
+<node TEXT="" ID="ID_37459199" CREATED="1561676822179" MODIFIED="1561676822179"/>
+</node>
+<node TEXT="Conclusion" ID="ID_117250075" CREATED="1561681465876" MODIFIED="1561681469992">
+<node ID="ID_962919328" CREATED="1561681443961" MODIFIED="1561681443961"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    As forecasting tasks can vary by many dimensions (length of forecast horizon, size of test set, forecast error measures, frequency of data, etc.), it is unlikely that one method will be better than all others for all forecasting scenarios.
+  </body>
+</html>
+</richcontent>
+</node>
+<node ID="ID_912703567" CREATED="1561681458438" MODIFIED="1561681458438"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    What we require from a forecasting method are consistently sensible forecasts, and these should be frequently evaluated against the task at hand.
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+</node>
+<node TEXT="7.3 Holt-Winter&apos;s seasonal method" ID="ID_1475579594" CREATED="1561941197284" MODIFIED="1561941217282">
+<node TEXT="Intro" FOLDED="true" ID="ID_1651624165" CREATED="1561941284545" MODIFIED="1561941286110">
+<node TEXT="Holt and Winters extended Holt&apos;s method to capture seasonality." ID="ID_449103881" CREATED="1561941286929" MODIFIED="1561941306918"/>
+<node TEXT="It consists of the forecast equation and three smoothing equations- one for level lt, one for trend bt, and one for the seasonal component st" ID="ID_289824394" CREATED="1561941389632" MODIFIED="1561941513583"/>
+<node TEXT="There are two variations in this method, depending on the nature of the seasonal variation of the time series." ID="ID_1101678631" CREATED="1561941671544" MODIFIED="1561941708326"/>
+<node ID="ID_1379220390" CREATED="1561941932048" MODIFIED="1561941932048"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    The additive method is preferred when the seasonal variations are roughly constant through the series, while the multiplicative method is preferred when the seasonal variations are changing proportional to the level of the series.
+  </body>
+</html>
 
 </richcontent>
+<node TEXT="Additive method" FOLDED="true" ID="ID_242866758" CREATED="1561941939577" MODIFIED="1561941943262">
+<node TEXT="Seasonal component is expressed in absolute terms in the scale of the observed series." ID="ID_1067455771" CREATED="1561941967297" MODIFIED="1561942005365"/>
+<node TEXT="In the level equation, the series is seasonally adjusted by subtracting the seasonal component" ID="ID_1068011298" CREATED="1561942042104" MODIFIED="1561942081605"/>
+<node TEXT="Within each year, the seasonal component will add up to approximately zero." ID="ID_397246075" CREATED="1561942131992" MODIFIED="1561942192629"/>
+</node>
+<node TEXT="Multiplicative method" FOLDED="true" ID="ID_1969812567" CREATED="1561941943712" MODIFIED="1561941949165">
+<node TEXT="Seasonal component is expressed in relative terms." ID="ID_729905470" CREATED="1561942009440" MODIFIED="1561942031213"/>
+<node TEXT="In the level equation, the series is seasonally adjusted by dividing through by the seasonal component." ID="ID_81397947" CREATED="1561942093600" MODIFIED="1561942129165"/>
+<node TEXT="Within each year, the seasonal component will add up to m." ID="ID_1370759523" CREATED="1561942195208" MODIFIED="1561942225693"/>
+</node>
+</node>
+</node>
+<node TEXT="Holt-Winters&apos; additive method" ID="ID_1652273260" CREATED="1561942363320" MODIFIED="1561942374972">
+<node TEXT="The component form for the additive method is:" ID="ID_1442140652" CREATED="1561942980721" MODIFIED="1561942989686">
+<hook URI="Forecasting_files/png_13829672777665115246.png" SIZE="1.0" NAME="ExternalObject"/>
+</node>
+<node ID="ID_687429644" CREATED="1561943274244" MODIFIED="1561943274244"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    The usual parameter restriction is <span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0"><font size="127%">0</font></span><font size="127%"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0">&#8804;</span><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0; padding-right: 0">&#947;</span></font><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0"><font size="70.7%">&#8727;</font></span><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0"><font size="127%">&#8804;</font></span><font size="127%"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0">1</span></font>, which translates to <span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0"><font size="127%">0</font></span><font size="127%"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0">&#8804;</span><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0; padding-right: 0">&#947;</span><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0">&#8804;</span><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0">1</span><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0">&#8722;</span><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0">&#945;</span></font>.
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node TEXT="Holt-Winters&apos; multiplicative method" ID="ID_1397425281" CREATED="1561943330744" MODIFIED="1561943340957">
+<node TEXT="The component form for the multiplicative method is:" ID="ID_1106846635" CREATED="1561943401049" MODIFIED="1561943451850">
+<hook URI="Forecasting_files/png_4560269948543447021.png" SIZE="1.0" NAME="ExternalObject"/>
 </node>
 </node>
 </node>
