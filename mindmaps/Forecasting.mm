@@ -555,7 +555,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Chapter 7 Exponential Smoothing" POSITION="right" ID="ID_954080424" CREATED="1561409831801" MODIFIED="1561409869204">
+<node TEXT="Chapter 7 Exponential Smoothing" FOLDED="true" POSITION="right" ID="ID_954080424" CREATED="1561409831801" MODIFIED="1561409869204">
 <node TEXT="Intro" FOLDED="true" ID="ID_1986229392" CREATED="1561409841993" MODIFIED="1561409847724">
 <node TEXT="Exp Smoothing methods are weighted averages of past observations." ID="ID_1058098296" CREATED="1561409884441" MODIFIED="1561409904309"/>
 <node TEXT="The weights decay the more the observations are further along in the past." ID="ID_1885207803" CREATED="1561409904865" MODIFIED="1561409922332"/>
@@ -694,7 +694,7 @@
 </node>
 </node>
 </node>
-<node TEXT="7.3 Holt-Winter&apos;s seasonal method" ID="ID_1475579594" CREATED="1561941197284" MODIFIED="1561941217282">
+<node TEXT="7.3 Holt-Winter&apos;s seasonal method" FOLDED="true" ID="ID_1475579594" CREATED="1561941197284" MODIFIED="1561941217282">
 <node TEXT="Intro" FOLDED="true" ID="ID_1651624165" CREATED="1561941284545" MODIFIED="1561941286110">
 <node TEXT="Holt and Winters extended Holt&apos;s method to capture seasonality." ID="ID_449103881" CREATED="1561941286929" MODIFIED="1561941306918"/>
 <node TEXT="It consists of the forecast equation and three smoothing equations- one for level lt, one for trend bt, and one for the seasonal component st" ID="ID_289824394" CREATED="1561941389632" MODIFIED="1561941513583"/>
@@ -709,7 +709,6 @@
     The additive method is preferred when the seasonal variations are roughly constant through the series, while the multiplicative method is preferred when the seasonal variations are changing proportional to the level of the series.
   </body>
 </html>
-
 </richcontent>
 <node TEXT="Additive method" FOLDED="true" ID="ID_242866758" CREATED="1561941939577" MODIFIED="1561941943262">
 <node TEXT="Seasonal component is expressed in absolute terms in the scale of the observed series." ID="ID_1067455771" CREATED="1561941967297" MODIFIED="1561942005365"/>
@@ -737,7 +736,6 @@
     The usual parameter restriction is <span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0"><font size="127%">0</font></span><font size="127%"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0">&#8804;</span><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0; padding-right: 0">&#947;</span></font><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0"><font size="70.7%">&#8727;</font></span><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0"><font size="127%">&#8804;</font></span><font size="127%"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0">1</span></font>, which translates to <span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0"><font size="127%">0</font></span><font size="127%"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0">&#8804;</span><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0; padding-right: 0">&#947;</span><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0">&#8804;</span><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0">1</span><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0">&#8722;</span><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0">&#945;</span></font>.
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -746,6 +744,98 @@
 <hook URI="Forecasting_files/png_4560269948543447021.png" SIZE="1.0" NAME="ExternalObject"/>
 </node>
 </node>
+</node>
+<node TEXT="7.7 Forecasting with ETS models" FOLDED="true" ID="ID_1111608853" CREATED="1562109581003" MODIFIED="1562109681786">
+<node TEXT="Intro" FOLDED="true" ID="ID_835687761" CREATED="1562110457682" MODIFIED="1562110465894">
+<node ID="ID_717429427" CREATED="1562110473270" MODIFIED="1562110473270"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    Point forecasts are obtained from the models by iterating the equations for <span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0"><font size="127%">t</font></span><font size="127%"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0">=</span><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0; padding-right: 0">T</span><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0">+</span><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0">1</span><span class="mjx-char MJXc-TeX-main-R" style="margin-top: 0; padding-bottom: 0">,</span><span class="mjx-char MJXc-TeX-main-R" style="margin-top: 0; padding-bottom: 0">&#8230;</span><span class="mjx-char MJXc-TeX-main-R" style="margin-top: 0; padding-bottom: 0">,</span><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0; padding-right: 0">T</span><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0">+</span><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0">h</span></font> and setting all <span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0"><font size="127%">&#949;</font></span><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0"><font size="70.7%">t</font></span><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0"><font size="127%">=</font></span><font size="127%"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0">0</span></font> for <span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0"><font size="127%">t</font></span><font size="127%"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0">&gt;</span><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0; padding-right: 0">T</span></font>.
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1846930201" CREATED="1562110558111" MODIFIED="1562110558111"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    These forecasts are identical to the forecasts from Holt&#8217;s linear method, and also to those from model ETS(A,A,N).
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1527967820" CREATED="1562110572263" MODIFIED="1562110572263"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    Thus, the point forecasts obtained from the method and from the two models that underlie the method are identical (assuming that the same parameter values are used)
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node TEXT="Point Forecasts" FOLDED="true" ID="ID_1348615616" CREATED="1562110606322" MODIFIED="1562110629887">
+<node TEXT="ETS point forecasts are equal to the medians of the forecast distributions." ID="ID_1631703870" CREATED="1562110636313" MODIFIED="1562110683534"/>
+<node TEXT="For models with only additive components, the forecasts are normally distributed, the median equals the mean" ID="ID_1163167598" CREATED="1562110684058" MODIFIED="1562110767030"/>
+<node TEXT="For ETS models with multiplicative errors or multiplicative seasonality, the point forecasts will not be equal to the means of the forecast distribution." ID="ID_522097677" CREATED="1562110771777" MODIFIED="1562110895552"/>
+</node>
+<node TEXT="Prediction Intervals" FOLDED="true" ID="ID_603628350" CREATED="1562111456961" MODIFIED="1562111463223">
+<node TEXT="With statistical models, we can generate prediction intervals." ID="ID_657838943" CREATED="1562111631377" MODIFIED="1562111647966"/>
+<node TEXT="We can write the prediction interval as, where c is the coverage probability and &#x3c3;h is the forecast variance." ID="ID_1552105871" CREATED="1562111768723" MODIFIED="1562111831744">
+<hook URI="Forecasting_files/png_12361878260186996936.png" SIZE="1.0" NAME="ExternalObject"/>
+</node>
+<node TEXT="Formulas for the forecast variance are quite complicated." ID="ID_449842620" CREATED="1562111947720" MODIFIED="1562111958541">
+<hook URI="Forecasting_files/png_764582635275912296.png" SIZE="0.7782101" NAME="ExternalObject"/>
+</node>
+<node TEXT="For a few ETS models, no known prediction invervals exist. In such cases techniques like bootstrapping are used to generate the intervals." ID="ID_123031784" CREATED="1562112002841" MODIFIED="1562112081789">
+<node TEXT="The forecast() function uses simulated future sample paths and computes prediction intervals from the percentiles of these simulated future paths." ID="ID_1677908460" CREATED="1562112086681" MODIFIED="1562112150861"/>
+<node ID="ID_1987362420" CREATED="1562112603351" MODIFIED="1562112603351"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    If <code http-equiv="content-type" content="text/html; charset=utf-8">bootstrap=TRUE</code> and <code>simulate=TRUE</code>, then the simulated prediction intervals use re-sampled errors rather than normally distributed errors.
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1304703050" CREATED="1562113264818" MODIFIED="1562113264818"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <code http-equiv="content-type" content="text/html; charset=utf-8">biasadj</code> If <code>lambda</code> is not <code>NULL</code>, the back-transformed forecasts (and prediction intervals) are bias-adjusted.
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="biasadj doesn&apos;t work to make median into mean when we use forecast models with multiplicative errors or multiplicative seasonality. It only works when we use lambda to make a boxcox transformation." ID="ID_710100081" CREATED="1562113268610" MODIFIED="1562113551233"/>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="Chapter 8 ARIMA Models" POSITION="right" ID="ID_1111029957" CREATED="1562114329178" MODIFIED="1562114343580">
+<node TEXT="Intro" ID="ID_1229070481" CREATED="1562114377426" MODIFIED="1562114382453">
+<node TEXT="Exponential smoothing and ARIMA models are the two most widely used approaches to time series forecasting, and provide complementary approaches to the problem." ID="ID_672918425" CREATED="1562114383186" MODIFIED="1562114432269"/>
 </node>
 </node>
 </node>
