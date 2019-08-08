@@ -64,7 +64,7 @@
 </stylenode>
 </map_styles>
 </hook>
-<hook NAME="AutomaticEdgeColor" COUNTER="2" RULE="ON_BRANCH_CREATION"/>
+<hook NAME="AutomaticEdgeColor" COUNTER="6" RULE="ON_BRANCH_CREATION"/>
 <node TEXT="8/8/19" OBJECT="org.freeplane.features.format.FormattedDate|2019-08-08T00:00+0530|date" POSITION="right" ID="ID_1906273134" CREATED="1565282304673" MODIFIED="1565282310724">
 <edge COLOR="#0000ff"/>
 <node TEXT="HIPR2&#xa;Image processing techniques" ID="ID_1448709065" CREATED="1565282170752" MODIFIED="1565282200763">
@@ -79,6 +79,12 @@
 <node TEXT="Working efficiently with JupyterLab Notebooks" ID="ID_1893565352" CREATED="1565282734759" MODIFIED="1565282758885">
 <node TEXT="https://florianwilhelm.info/2018/11/working_efficiently_with_jupyter_lab/" ID="ID_635245937" CREATED="1565282761071" MODIFIED="1565282761071" LINK="https://florianwilhelm.info/2018/11/working_efficiently_with_jupyter_lab/"/>
 <node TEXT="Will teach you how to make good use of Jupyter Lab notebooks" ID="ID_1670741844" CREATED="1565282763463" MODIFIED="1565282783822"/>
+</node>
+</node>
+<node TEXT="8/9/19" OBJECT="org.freeplane.features.format.FormattedDate|2019-08-09T00:00+0530|date" POSITION="right" ID="ID_12099658" CREATED="1565290062048" MODIFIED="1565290092476">
+<edge COLOR="#00ff00"/>
+<node TEXT="Use of GAN in a semi-supervised OCR use case" ID="ID_955453270" CREATED="1565290094360" MODIFIED="1565290129379">
+<node TEXT="https://florianwilhelm.info/2018/10/performance_evalution_of_gans_in_a_semi-supervised_ocr_use_case/" ID="ID_1734229465" CREATED="1565290130491" MODIFIED="1565290130491" LINK="https://florianwilhelm.info/2018/10/performance_evalution_of_gans_in_a_semi-supervised_ocr_use_case/"/>
 </node>
 </node>
 </node>
