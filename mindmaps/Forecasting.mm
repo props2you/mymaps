@@ -304,7 +304,7 @@
 <node TEXT="If not, the new method is not worth considering." ID="ID_81410437" CREATED="1560902339908" MODIFIED="1560902351449"/>
 </node>
 <node TEXT="3.2 Transformations and adjustments" ID="ID_134323609" CREATED="1560902373516" MODIFIED="1560902424168">
-<node TEXT="Intro" FOLDED="true" ID="ID_1974042538" CREATED="1560902434580" MODIFIED="1560902437448">
+<node TEXT="Intro" ID="ID_1974042538" CREATED="1560902434580" MODIFIED="1560902437448">
 <node TEXT="Adjusting the historical data can lead to a simpler forecasting task" ID="ID_166286613" CREATED="1560902438124" MODIFIED="1560902457455"/>
 <node TEXT="The purpose of adjustments is to remove the known sources of variation, or to make the patterns more consistent across the data set." ID="ID_249805756" CREATED="1560902470492" MODIFIED="1560902541107"/>
 <node TEXT="Simpler patterns lead to better forecasts." ID="ID_976712286" CREATED="1560902541556" MODIFIED="1560902555103"/>
@@ -419,7 +419,7 @@
 </richcontent>
 </node>
 </node>
-<node TEXT="Mathematical transformations" FOLDED="true" ID="ID_1649989930" CREATED="1560904196580" MODIFIED="1560904280636">
+<node TEXT="Mathematical transformations" ID="ID_1649989930" CREATED="1560904196580" MODIFIED="1560904280636">
 <font BOLD="false"/>
 <node TEXT="Logarithms are useful because they are interpretable." ID="ID_1952472080" CREATED="1560904222764" MODIFIED="1560904235190"/>
 <node TEXT="Another useful feature of log transformations is that they constrain the forecasts to stay positive on the original scale" ID="ID_1408731992" CREATED="1560905518380" MODIFIED="1560905546621" BACKGROUND_COLOR="#ffcc33"/>
@@ -757,7 +757,6 @@
     Point forecasts are obtained from the models by iterating the equations for <span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0"><font size="127%">t</font></span><font size="127%"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0">=</span><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0; padding-right: 0">T</span><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0">+</span><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0">1</span><span class="mjx-char MJXc-TeX-main-R" style="margin-top: 0; padding-bottom: 0">,</span><span class="mjx-char MJXc-TeX-main-R" style="margin-top: 0; padding-bottom: 0">&#8230;</span><span class="mjx-char MJXc-TeX-main-R" style="margin-top: 0; padding-bottom: 0">,</span><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0; padding-right: 0">T</span><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0">+</span><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0">h</span></font> and setting all <span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0"><font size="127%">&#949;</font></span><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0"><font size="70.7%">t</font></span><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0"><font size="127%">=</font></span><font size="127%"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0">0</span></font> for <span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0"><font size="127%">t</font></span><font size="127%"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0; padding-bottom: 0">&gt;</span><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0; padding-bottom: 0; padding-right: 0">T</span></font>.
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_1846930201" CREATED="1562110558111" MODIFIED="1562110558111"><richcontent TYPE="NODE">
@@ -770,7 +769,6 @@
     These forecasts are identical to the forecasts from Holt&#8217;s linear method, and also to those from model ETS(A,A,N).
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_1527967820" CREATED="1562110572263" MODIFIED="1562110572263"><richcontent TYPE="NODE">
@@ -783,7 +781,6 @@
     Thus, the point forecasts obtained from the method and from the two models that underlie the method are identical (assuming that the same parameter values are used)
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -812,7 +809,6 @@
     If <code http-equiv="content-type" content="text/html; charset=utf-8">bootstrap=TRUE</code> and <code>simulate=TRUE</code>, then the simulated prediction intervals use re-sampled errors rather than normally distributed errors.
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_1304703050" CREATED="1562113264818" MODIFIED="1562113264818"><richcontent TYPE="NODE">
@@ -825,7 +821,6 @@
     <code http-equiv="content-type" content="text/html; charset=utf-8">biasadj</code> If <code>lambda</code> is not <code>NULL</code>, the back-transformed forecasts (and prediction intervals) are bias-adjusted.
   </body>
 </html>
-
 </richcontent>
 </node>
 <node TEXT="biasadj doesn&apos;t work to make median into mean when we use forecast models with multiplicative errors or multiplicative seasonality. It only works when we use lambda to make a boxcox transformation." ID="ID_710100081" CREATED="1562113268610" MODIFIED="1562113551233"/>
@@ -834,8 +829,72 @@
 </node>
 </node>
 <node TEXT="Chapter 8 ARIMA Models" POSITION="right" ID="ID_1111029957" CREATED="1562114329178" MODIFIED="1562114343580">
-<node TEXT="Intro" ID="ID_1229070481" CREATED="1562114377426" MODIFIED="1562114382453">
+<node TEXT="Intro" FOLDED="true" ID="ID_1229070481" CREATED="1562114377426" MODIFIED="1562114382453">
 <node TEXT="Exponential smoothing and ARIMA models are the two most widely used approaches to time series forecasting, and provide complementary approaches to the problem." ID="ID_672918425" CREATED="1562114383186" MODIFIED="1562114432269"/>
+<node TEXT="Exponential smoothing focuses on describing the trend an seasonality in the data." ID="ID_1539718978" CREATED="1562114683650" MODIFIED="1562114711758"/>
+<node TEXT="While ARIMA focuses on describing the autocorrelations in the data." ID="ID_1996550445" CREATED="1562114712610" MODIFIED="1562114738565"/>
+</node>
+<node TEXT="8.1 Stationarity and differencing" ID="ID_877550988" CREATED="1562115789378" MODIFIED="1562115801478">
+<node TEXT="Intro" FOLDED="true" ID="ID_831354224" CREATED="1562288677606" MODIFIED="1562288680403">
+<node ID="ID_595859328" CREATED="1562116041611" MODIFIED="1562116041611" LINK="https://otexts.com/fpp2/stationarity.html#fn14"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    A stationary time series is one whose properties do not depend on the time at which the series is observed.<a http-equiv="content-type" content="text/html; charset=utf-8" href="https://otexts.com/fpp2/stationarity.html#fn14" class="footnote-ref" id="fnref14"><sup>14</sup></a> Thus, time series with trends, or with seasonality, are not stationary &#8212; the trend and seasonality will affect the value of the time series at different times. On the other hand, a white noise series is stationary &#8212; it does not matter when you observe it, it should look much the same at any point in time.
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="Some cases can be confusing- a time series with cyclic behaviour (but with no trend or seasonality) is stationary." ID="ID_1917552106" CREATED="1562116751338" MODIFIED="1562287421176">
+<icon BUILTIN="yes"/>
+<node TEXT="This is because the cycles have no fixed length." ID="ID_1497512712" CREATED="1562117049786" MODIFIED="1562117068165"/>
+<node TEXT="So we cannot be sure where the crests and troughs will be." ID="ID_725133290" CREATED="1562117078890" MODIFIED="1562117093759"/>
+</node>
+<node TEXT="In general, a stationary time series will have no predictable patterns in the long term." ID="ID_1402380158" CREATED="1562117118410" MODIFIED="1562117139998">
+<node TEXT="Time plots will show the series to be roughly horizontal (although some cyclic behavior is possible), with constant variance." ID="ID_153146555" CREATED="1562117162514" MODIFIED="1562117205990"/>
+</node>
+<node TEXT="Which of these series are stationary?" ID="ID_469895807" CREATED="1562288587191" MODIFIED="1562288630990">
+<hook URI="Forecasting_files/png_9094562846654308111.png" SIZE="0.625" NAME="ExternalObject"/>
+</node>
+<node ID="ID_134941058" CREATED="1562288643182" MODIFIED="1562288643182"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    Obvious seasonality rules out series (d), (h) and (i). Trends and changing levels rules out series (a), (c), (e), (f) and (i). Increasing variance also rules out (i). That leaves only (b) and (g) as stationary series.
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node TEXT="Differencing" ID="ID_1074653211" CREATED="1562288681910" MODIFIED="1562288685250">
+<node TEXT="One way to make non-stationary time series stationary, is to take its difference." ID="ID_1206412208" CREATED="1562288717670" MODIFIED="1562288753091"/>
+<node TEXT="Transformations such as log can help stabilise the variance of a time series." ID="ID_864522717" CREATED="1562615289537" MODIFIED="1562615323633"/>
+<node TEXT="Differencing can stabilize the mean by removing the changes in the level of the series, thus removing/reducing trend and seasonality." ID="ID_453448921" CREATED="1562615327175" MODIFIED="1562615400773"/>
+<node TEXT="The ACF plot is useful for identifying non-stationary time series." FOLDED="true" ID="ID_779714206" CREATED="1562615458536" MODIFIED="1562615480557">
+<node TEXT="The ACF of stationary data drops to zero relatively quickly, while that of non-stationary data decreases slowly." ID="ID_417123227" CREATED="1562615741785" MODIFIED="1562615903612">
+<hook URI="Forecasting_files/png_12391988425972365995.png" SIZE="0.89285713" NAME="ExternalObject"/>
+</node>
+</node>
+</node>
+<node TEXT="Random walk models" ID="ID_994721324" CREATED="1562616875352" MODIFIED="1562616914420">
+<node TEXT="The differenced series is the change between the consecutive values." ID="ID_625634534" CREATED="1562616930879" MODIFIED="1562617088908"/>
+<node TEXT="It can be written as, yt&apos; = yt - yt-1" ID="ID_138197879" CREATED="1562617131828" MODIFIED="1562617140921">
+<hook URI="Forecasting_files/png_17321469440655487359.png" SIZE="1.0" NAME="ExternalObject"/>
+</node>
+<node TEXT="When the differenced series is white noise, we can write the model for the original series as" ID="ID_389694481" CREATED="1562617239972" MODIFIED="1562617250516">
+<hook URI="Forecasting_files/png_10942805852235212702.png" SIZE="1.0" NAME="ExternalObject"/>
+<node TEXT="Whate Et is white noise." ID="ID_862811837" CREATED="1562617276007" MODIFIED="1562617287483"/>
+</node>
+<node TEXT="Rearranging this leads to the random walk model, yt = yt-1 + Et" ID="ID_128276245" CREATED="1562617341637" MODIFIED="1562617372372">
+<hook URI="Forecasting_files/png_935539290607742571.png" SIZE="1.0" NAME="ExternalObject"/>
+</node>
+</node>
 </node>
 </node>
 </node>
