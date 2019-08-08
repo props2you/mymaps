@@ -86,6 +86,9 @@
 <node TEXT="Use of GAN in a semi-supervised OCR use case" ID="ID_955453270" CREATED="1565290094360" MODIFIED="1565290129379">
 <node TEXT="https://florianwilhelm.info/2018/10/performance_evalution_of_gans_in_a_semi-supervised_ocr_use_case/" ID="ID_1734229465" CREATED="1565290130491" MODIFIED="1565290130491" LINK="https://florianwilhelm.info/2018/10/performance_evalution_of_gans_in_a_semi-supervised_ocr_use_case/"/>
 </node>
+<node TEXT="pytest module to test python code and manage projects" ID="ID_1693781490" CREATED="1565290629216" MODIFIED="1565290667924">
+<node TEXT="https://docs.pytest.org/en/latest/getting-started.html" ID="ID_1866888939" CREATED="1565290668789" MODIFIED="1565290668789" LINK="https://docs.pytest.org/en/latest/getting-started.html"/>
+</node>
 </node>
 </node>
 </map>
